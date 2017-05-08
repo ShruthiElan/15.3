@@ -1,0 +1,13 @@
+WORKING OF SQOOP
+Sqoop is a tool designed to transfer data between Hadoop and relational database servers.
+ It is used to import data from relational databases such as MySQL, Oracle to Hadoop HDFS, and export from Hadoop file system to relational databases.
+ It is provided by the Apache Software Foundation.
+Sqoop Import
+The import tool imports individual tables from RDBMS to HDFS. 
+Each row in a table is treated as a record in HDFS.
+ All records are stored as text data in text files or as binary data in Avro and Sequence files.
+
+Sqoop Export
+The export tool exports a set of files from HDFS back to an RDBMS. 
+The files given as input to Sqoop contain records, which are called as rows in table.
+Those are read and parsed into a set of records and delimited with user-specified delimiter.
